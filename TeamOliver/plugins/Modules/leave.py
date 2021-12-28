@@ -5,7 +5,7 @@ USER_ID = message.from_user.id
 async def leave(client, message)
      if USER_ID in ADMIN_LIST :
           try:
-            message.reply_text("Bye, I am leaving this chat")
+             await message.reply_text("Bye, I am leaving this chat")
             client.leave_chat(.message.chat.id)
           except exception as e:
             print(e)
