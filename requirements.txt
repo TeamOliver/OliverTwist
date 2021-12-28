@@ -1,2 +1,6 @@
-pyrogram
+Pyrogram
+TgCrypto
 pymongo
+dnspython
+motor
+requests
