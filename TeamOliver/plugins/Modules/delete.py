@@ -5,7 +5,7 @@ from pyrogram.types import Message
 
 
 @Client.on_message(filters.command("del"))
-async def del_message(c, m):
+async def del_message(client, message):
     try:
         await client.delete_messages(message.chat.id, message.reply_to_message.message_id)
     except RPCError as e:
