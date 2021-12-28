@@ -1,4 +1,8 @@
-# Need some importing
+import requests
+from pyrogram.types import Message
+from typing import Union
+from datetime import datetime
+from typing import List
 
 def last_online(from_user):
     time = ""
