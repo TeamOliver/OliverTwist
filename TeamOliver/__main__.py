@@ -10,13 +10,4 @@ bot = Client(
        bot_token = BOT_TOKEN
      )
 
-#script here
-@client.on_message(filters.command('start') & filters.private)
-async def start(bot, message):
-      message.reply_text(START_TXR)
-
-@client.on_message(filters.command('start') & filters.group)
-async def grpstart(bot, message):
-      message.reply_text(GROUP_START_TEXT)
-
 bot.run()
