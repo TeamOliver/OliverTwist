@@ -10,10 +10,10 @@ async def start(client, message):
     text=START_TXT.format(mesage.from_user.mention),
     reply_markup=InlineKeyboardMarkup(
     [[
-    InlineKeyboardButton("➕ Add me to your groups", url="https://t.me/{bot_username}/start?group"),
-    InlineKeyboardButton("🤔 Help", callback_data="help")
+    InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs", url="https://t.me/{bot_username}/start?group"),
+    InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help")
     ],[
-    InlineKeyboardButton("🙂 About", callback_data="about")
-    InlineKeyboardButton("❌ Close", callback_data="close")
+    InlineKeyboardButton("ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="about")
+    InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")
     ]])
     
