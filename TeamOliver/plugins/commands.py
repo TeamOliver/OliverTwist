@@ -2,7 +2,7 @@ import os
 import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardmarkup 
-from TeamOliver import START_TXT, HELP_TXT, ABOUT_TXT, IMAGES, GROUP_START_TEXT
+from TeamOliver.strings import START_TXT, HELP_TXT, ABOUT_TXT, IMAGES, GROUP_START_TEXT
 
 @Client.on_message(filters.private & filters.command("start"))
 async def start(client, message):
