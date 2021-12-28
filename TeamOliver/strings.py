@@ -13,7 +13,7 @@ You can check my features by hitting /help 💕.
 
 GROUP_START_TEXT = """
 Hello {}, contact me in pm if you wanna use me 🤗
-"""
+""".format(message.from_user.first_name)
 
 WELCOME_TEXT = """
 hey {}, welcome to {}. So tell us about yourself.
