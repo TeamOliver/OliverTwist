@@ -9,7 +9,7 @@ async def ban(Client, message):
            message.reply_text("He is in my adminlist. I cant ban him")
       else:
            try:
-               bot.kick_chat_member(message.chat.id, message.reply_to_message.from_user.mention)
+               Client.kick_chat_member(message.chat.id, message.reply_to_message.from_user.mention)
                message.reply_text(f"{message.reply_to_message.from_user.first_name} has been banned.")
             except Exception as e:
                print(e)
