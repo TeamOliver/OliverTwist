@@ -6,7 +6,7 @@ from TeamOliver import BOT_TOKEN, START_IMAGE
 BOT_IMAGE = START_IMAGE
 
 START_TXT = """
-Heya <b>{}</b>, My name is <b>{}</b>. I am a powerfull. I am a bot
+Hello My dear <b>{}</b>, My name is <b>{}</b>. I am a powerfull. I am a bot
 which can provide movies in your group😘. I have a few extras as well.
 You can check my features by hitting /help 💕.
 """
