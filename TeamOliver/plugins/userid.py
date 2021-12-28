@@ -1,5 +1,6 @@
 import html
+from pyrogram import Client, filters
 
-@bot.on_message(filters.command('id') & filters.private)
-def id(bot, message):
-      message.reply_text(f"Your id is :-<code>{message.chat.id}</code>}
+@Client.on_message(filters.command('id'))
+async def id(bot, message):
+    await message.reply_text(f"Your id is :-<code>{message.chat.id}</code>}")
