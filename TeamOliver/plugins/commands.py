@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardmarkup 
 import random
-from script import script
+from plugins.string import START_TXT, HELP_TXT, ABOUT_TXT
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client, message):
