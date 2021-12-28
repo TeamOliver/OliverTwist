@@ -17,10 +17,4 @@ async def start(client, message):
     InlineKeyboardButton("❌ Close", callback_data="close")
     ]])
     
-@Client.on_message(filters.private & filters.command(["help"]))
-async def help_about(client, message):
-    await message.reply_text(
-    text=ABOUT_TXT.format(message.from_user.mention), # think different, what should i think different in start message amd buttons - idea by anandhu
-    reply_markup=markups.ABOUT_BUTTONS,
-    disable_web_page_preivew=True
-    )
+
