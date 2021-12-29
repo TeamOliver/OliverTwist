@@ -22,12 +22,12 @@ async def start(client, message):
 @Client.on_message(filters.command('start') & filters.group)
 async def grpstart(client, message):
     await message.reply_photo(random.choice(IMAGES),
-    caption=GROUP_START_TEXT
+    caption=GROUP_START_TEXT)
 
 @Client.on_message(filters.command('about') & filters.private)
 async def about(Client,message):
        await message.reply_photo(random.choice(IMAGES),
-       caption=ABOUT_TXT
+       caption=ABOUT_TXT,
     reply_markup=InlinekeyboardMarkup([
               [InlinekeyboardButton("Back", callback_data="start"]
    ])
