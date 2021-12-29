@@ -9,7 +9,7 @@ async def slap(Client, message)
       user2 = message.from_user.first_name
       item = random.choice(ITEMS)
       hit = random.choice(HIT)
-      throw = random.choice(THROW)
+      throws = random.choice(THROW)
       await message.reply_text(random.choice(SLAP.TEMPLATES)
    else:
       message.reply_text(f"You haven't mentioned whom to slap, So i will slap you with {item}")
