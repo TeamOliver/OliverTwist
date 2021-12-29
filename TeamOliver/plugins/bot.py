@@ -10,7 +10,7 @@ async def start(client, message):
     photo=random.choice(IMAGES),
     caption=START_TXT.format(mention=mesage.from_user.mention,
                              first=message.from_user.first_name,
-                             last=message.from_user.last_name
+                             last=message.from_user.last_name,
                              username=message.from_user.username),
     reply_markup=InlineKeyboardMarkup([
                                        [InlineKeyboardButton("➕ Add me to your groups", url="https://t.me/{bot_username}/start?group".format(bot_username)],
