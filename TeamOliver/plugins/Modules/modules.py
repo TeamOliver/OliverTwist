@@ -7,8 +7,9 @@ Data = callback_data
 Link = url
 BUTTONS = Button(
         [[
-        TGButton("Filter", Data="filter_help")
+        TGButton(f"{FILTER_BUTTON_TEXT}", Data="filter_help")
         ]]
     )
         
         
+FILTER_BUTTON_TEXT = "Filter"
