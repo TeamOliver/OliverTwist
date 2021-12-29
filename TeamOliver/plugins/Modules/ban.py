@@ -1,4 +1,5 @@
 from pyrogram.types import ChatPermission
+from pyrogram import Client, filters
 
 from TeamOliver import ADMIN_LIST
 
