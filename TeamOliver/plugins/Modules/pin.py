@@ -11,7 +11,7 @@ async def admins(client, message):
 
 @Client.on_message(filters.command("pin") & filters.group)
 async def pin(client, message):
-    if not admin:
+    if not admins:
         return
     else:
         message_id = message.reply_to_message.message_id
@@ -22,7 +22,7 @@ async def pin(client, message):
 
 @Client.on_message(filters.command("unpin") & filters.group)
 async def unpin(client, message):
-    if not admin:
+    if not admins:
         return
     else:
         message_id = message.reply_to_message.message_id
