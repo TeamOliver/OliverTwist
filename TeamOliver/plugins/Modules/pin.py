@@ -15,7 +15,7 @@ async def pin(client, message):
 async def unpin(client, message):
     try:
         message_id = message.reply_to_message.message_id
-        await client.pin_chat_message(message.chat.id, message_id)
+        await client.unpin_chat_message(message.chat.id, message_id)
         await message.edit("<code>Unpinned successfully!</code>")
     except:
         await message.edit("Reply to the message you want to unpin")
