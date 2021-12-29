@@ -13,13 +13,13 @@ async def start(client, message):
                              last=message.from_user.last_name,
                              username=message.from_user.username),
     reply_markup=InlineKeyboardMarkup([[
-                                      InlineKeyboardButton("➕ Add me to your groups", url=f"https://t.me/{bot_username}/start?group".format(bot_username)
+                                      InlineKeyboardButton("➕ Add Me To Your Groups", url=f"https://t.me/{BOT_USERNAME}/start?group".format(bot_username)
                                       ],[
-                                      InlineKeyboardButton("❓️ Help", callback_data="help"),
-                                      InlineKeyboardButton("🗨️ About", callback_data="about")
+                                      InlineKeyboardButton("ℹ️ Help", callback_data="help"),
+                                      InlineKeyboardButton("🔰 About", callback_data="about")
                                       ],[
-                                      InlineKeyboardButton("❌ Close", callback_data="close"),
-                                      InlinekeyboardButton("📄Source code", url="https://github.com/TeamOliver/OliverTwist")
+                                      InlineKeyboardButton("Close ⛔", callback_data="close"),
+                                      InlinekeyboardButton("📚 Source Code", url="https://github.com/TeamOliver/OliverTwist")
                                       ]]))
 
 @Client.on_message(filters.command('start') & filters.group)
