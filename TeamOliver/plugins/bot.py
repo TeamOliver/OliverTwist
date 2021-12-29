@@ -6,7 +6,8 @@ from TeamOliver.strings import START_TXT, HELP_TXT, ABOUT_TXT, IMAGES, GROUP_STA
 
 @Client.on_message(filters.private & filters.command("start"))
 async def start(client, message):
-    await message.reply_photo(random.choice(IMAGES),
+    await message.reply_photo(
+    photo=random.choice(IMAGES),
     caption=START_TXT.format(mention=mesage.from_user.mention,
                              first=message.from_user.first_name,
                              last=message.from_user.last_name
@@ -21,7 +22,8 @@ async def start(client, message):
                               )
 @Client.on_message(filters.command('start') & filters.group)
 async def grpstart(client, message):
-    await message.reply_photo(random.choice(IMAGES),
+    await message.reply_photo(
+    photo=random.choice(IMAGES),
     caption=GROUP_START_TEXT)
 
 @Client.on_message(filters.command('about') & filters.private)
