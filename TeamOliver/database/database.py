@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from TeamOliver import MONGODB_URL
+from config import MONGODB_URL
     
 client = MongoClient(MONGODB_URL)
 db = client['CHATS']
