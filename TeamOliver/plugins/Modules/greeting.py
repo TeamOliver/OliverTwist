@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 
-from TeamOliver import WELCOME_TEXT
+from TeamOliver.strings import WELCOME_TEXT
 
 
 title = message.chat.title
@@ -11,7 +11,7 @@ WELCOME_TXT = WELCOME_TEXT
 @Client.on_message(filters.chat(GROUP) & filters.new_chat_members)
 async def welcomebot(Client, message):
      try:
-        await message.reply_text(WELCOME.TXT.format(message.from_user.first_name, title)
+        await message.reply_text(WELCOME.TXT)
      except Exception as e:
         print(e)
         message.reply_text("I couldn't welcome new member")
@@ -24,3 +24,17 @@ async def showwel(Client, message):
           print(e)
           message.reply_text("something went wrong")
 
+@Client.on_message(filters.command('setwelcome') & filters.group)
+async def setwel(Client, message):
+       if message.reply_to_message:
+         try:
+             WELCOME_TXT = message.reply_to_message
+             await message.reply_text(f"New welcome message set for **{title}**")
+         exept exception as e:
+             print(f"faild to set welcome message for {title}. Error occurred :- {e}")
+       else:
+          args = message.from_user.split(None, 1)
+          if len(args) >= 2:
+             WELCOME_TXT = args[1]
+          else:
+             message.reply_text("You haven't given the welcome message")
