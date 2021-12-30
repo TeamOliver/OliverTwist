@@ -5,7 +5,7 @@
   <b>Oliver Twist Bot</b>
 </h1>
 Heya guys,
-  This repo is unfinished. Will finished this soon🤗.
+  This repo is unfinished. Will finished this soon🤗 [HATERS STEPBACK😒].
         <b> -© Team OliverTwist</b>
 <details><summary>Deploy To Heroku</summary>
 <p>
