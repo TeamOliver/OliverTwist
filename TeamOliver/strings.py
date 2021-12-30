@@ -22,7 +22,8 @@ Hello {}, contact me in pm if you wanna use me 🤗
 
 WELCOME_TEXT = """
 hey {}, welcome to {}. So tell us about yourself.
-"""
+""".format(message.from_user.first_name, title)
+
 ABOUT_TXT = """
 Owner = <a href="t.me//user?id={}">This person</a><br>
 Source-code = <a href="https://github.com/TeamOliver/OliverTwist">Click here</a><br> #fill this later
