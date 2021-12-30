@@ -1,16 +1,18 @@
 from pyrogram import Client, filters
-import os
-from pyrogram.types import Message
 
 
-
-@Client.on_message(filters.command("del"))
+@Client.on_message(filters.command("del") & filters.group)
 async def del_message(client, message):
-    try:
-        await client.delete_messages(message.chat.id, message.reply_to_message.message_id)
-    except RPCError as e:
-        print(e)
-    try:
-        await client.delete_messages(message.chat.id, message.message_id)
-    except RPCError as e:
-        print(e)
+    member = await client.get_chat_member(chat_id=message.chat.id, user_id=message.from_user.id)
+    if member.can_delete_messages:
+       try:
+           await message.reply_to_message.delete()
+       except Exception as e:
+           await message.reply("I can't delete that message")
+           print(e)
+       try:
+           await message.delete()
+       except Exception as e:
+           print(e)
+    else:
+         await message.reply("You don't have permission to do this!")
