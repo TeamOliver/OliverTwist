@@ -1,3 +1,5 @@
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+TeamOliver's+Repo!;A+powerful+telegram+bot!;and+all+features!)
+</p>
 <p align="center">
   <img src="assets/OliverTwistLoGo.jpg" alt="Oliver Twist Logo">
 </p>
