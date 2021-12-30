@@ -1,7 +1,7 @@
 #© TeamOliver
 from pyrogram import Client, filters
 
-from config import BOT_TOKEN, APP_ID, API, HASH
+from config import BOT_TOKEN, APP_ID, API_HASH
 from TeamOliver import START_TXT, GROUP_START_TEXT
 
 bot = Client(
