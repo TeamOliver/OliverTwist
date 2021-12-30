@@ -30,7 +30,7 @@ async def setwel(Client, message):
          try:
              WELCOME_TXT = message.reply_to_message
              await message.reply_text(f"New welcome message set for **{title}**")
-         exept exception as e:
+         except exception as e:
              print(f"faild to set welcome message for {title}. Error occurred :- {e}")
        else:
           args = message.from_user.split(None, 1)
