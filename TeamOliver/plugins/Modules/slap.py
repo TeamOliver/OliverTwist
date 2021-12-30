@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 
-from TeamOliver import SLAP_TEMPLATES, ITEMS, THROW, HIT
+from TeamOliver.strings import SLAP_TEMPLATES, ITEMS, THROW, HIT
 
 @Client.on_message(filters.command('slap') & filters.private & filters.group)
 async def slap(Client, message)
