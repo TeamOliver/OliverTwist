@@ -1,3 +1,4 @@
+import html
 from pyrogram import Client, filters
 from config import COMMAND_HAND_LER
 from TeamOliver.helper_functions.admin_check import admin_check
@@ -73,7 +74,7 @@ async def temp_ban_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "Congratulations You Are Banned 🚫 Lamo..! "
+                "Congratulations You Are Banned 🚫! "
                 f"{user_first_name}"
                 f" banned for {message.command[1]}!"
             )
