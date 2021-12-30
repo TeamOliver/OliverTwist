@@ -1,11 +1,14 @@
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+TeamOliver's+Repo!;A+powerful+telegram+bot!;and+all+features!)
+</p>
 <p align="center">
   <img src="assets/OliverTwistLoGo.jpg" alt="Oliver Twist Logo">
 </p>
 <h1 align="center">
   <b>Oliver Twist Bot</b>
 </h1>
+</p>
 Heya guys,
-  This repo is unfinished. Will finished this soon🤗 [HATERS STEPBACK😒].
+  This repo is unfinished. Will finished this soon🤗 <br><b>[HATERS STEPBACK😒]</b>.<br>
         <b> -© Team OliverTwist</b>
 <details><summary>Deploy To Heroku</summary>
 <p>
