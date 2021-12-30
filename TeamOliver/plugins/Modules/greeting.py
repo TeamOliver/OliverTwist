@@ -20,7 +20,7 @@ async def welcomebot(Client, message):
 async def showwel(Client, message):
         try:
           message.reply_text(f"The current welcome message of **{title}** is :-\n \n {WELCOME.TXT}")
-        exept Exception as e:
+        except Exception as e:
           print(e)
           message.reply_text("something went wrong")
 
