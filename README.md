@@ -9,12 +9,13 @@
 </p>
 Heya guys,
   This repo is unfinished. Will finished this soon🤗 <br><b>[HATERS STEPBACK😒]</b>.<br>
-        <b> -© Team OliverTwist</b>
-<details><summary>Deploy To Heroku</summary>
+        <b> -© Team OliverTwist</b><br>
+<br>
+<center><h2>Deploy To Heroku</h2>
 <p>
+<i>Use the below button to deploy a OliverTwist's clone</i><br>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/TeamOliver/OliverTwist">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"><center>
 </a>
 </p>
-</details>
