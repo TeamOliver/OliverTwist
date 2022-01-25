@@ -12,4 +12,4 @@ async def antifrwd(Client, message):
 @bot.on_message(Oliver.forwarded)
 async def delete_chey(Client, message):
       while FRWD is True:
-          Client.delete_message()
+          await bot.delete_message()
